@@ -102,7 +102,7 @@ function init()
     // option for each sample name.
     for (let name in names){
       dropdown.append("option").attr("value",name).text(name);
-    };
+    }
 
     // Get the first sample from the list
     let first_sample = names[0];
@@ -111,7 +111,7 @@ function init()
     // Build charts and metadata panel with the first sample
     buildCharts(first_sample)
   });
-};
+}
 
 // Function for event listener
 function optionChanged(new_sample) {
