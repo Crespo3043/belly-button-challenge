@@ -87,8 +87,7 @@ function buildCharts(sample) {
 }
 
 // Function to run on page load
-function init() 
-{
+function init() {
   d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) => {
 
     // Get the names field
@@ -111,7 +110,7 @@ function init()
     // Build charts and metadata panel with the first sample
     buildCharts(first_sample)
   });
-}
+};
 
 // Function for event listener
 function optionChanged(new_sample) {
@@ -119,7 +118,7 @@ function optionChanged(new_sample) {
   console.log(value);
   buildCharts(value);
 
-}
+};
 
 // Initialize the dashboard
 init();
